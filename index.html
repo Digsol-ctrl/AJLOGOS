@@ -182,7 +182,7 @@ section{padding:5rem 0;}
 .about{background:#fff;}
 .about-g{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;}
 .ab-img{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lg);}
-.ab-img img{width:100%;height:480px;object-fit:cover;}
+.ab-img img{width:100%;height:480px;}
 .ab-badge{position:absolute;bottom:1.25rem;left:1.25rem;background:#fff;border-radius:10px;padding:.85rem 1.1rem;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:.7rem;}
 .abi-ico{width:42px;height:42px;background:var(--blue-light);border-radius:8px;display:flex;align-items:center;justify-content:center;color:var(--blue-mid);font-size:1.2rem;flex-shrink:0;}
 .abi-lbl{font-size:.68rem;color:var(--gray);font-weight:600;text-transform:uppercase;letter-spacing:1px;}
@@ -196,6 +196,21 @@ section{padding:5rem 0;}
 .vchip{display:inline-flex;align-items:center;gap:.38rem;background:var(--off);border:1px solid #E2E8F0;color:var(--navy);padding:.38rem .85rem;border-radius:20px;font-size:.8rem;font-weight:600;transition:var(--t);}
 .vchip:hover{background:var(--blue-light);border-color:var(--blue-mid);color:var(--blue-mid);}
 .vchip i{color:var(--gold);font-size:.75rem;}
+
+/* LEADERSHIP */
+.leadership{background:linear-gradient(135deg,rgba(27,79,216,.04),rgba(37,99,235,.02));padding:5rem 0;}
+.leadership-g{display:grid;grid-template-columns:1fr 1.1fr;gap:4rem;align-items:flex-start;}
+.lead-img{position:relative;border-radius:16px;overflow:hidden;box-shadow:var(--shadow-lg);}
+.lead-img img{width:100%;height:520px;object-fit:cover;}
+.lead-txt h3{font-family:'Barlow Condensed',sans-serif;font-size:1.45rem;font-weight:800;color:var(--navy);letter-spacing:1px;margin-bottom:1.1rem;text-transform:uppercase;}
+.lead-txt p{color:var(--gray);line-height:1.82;margin-bottom:1.2rem;font-size:.98rem;}
+.cred-section{background:#fff;border-radius:12px;padding:1.4rem;margin-bottom:1.4rem;border-left:4px solid var(--blue-mid);box-shadow:0 2px 8px rgba(27,79,216,.08);}
+.cred-section h4{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;color:var(--navy);margin-bottom:.8rem;letter-spacing:.5px;}
+.cred-list{list-style:none;padding:0;margin:0;}
+.cred-list li{color:var(--gray);line-height:1.75;margin-bottom:.65rem;font-size:.95rem;padding-left:1.6rem;position:relative;}
+.cred-list li::before{content:'✓';position:absolute;left:0;color:var(--blue-mid);font-weight:900;font-size:1.1rem;}
+.cred-list li strong{color:var(--navy);}
+.lead-philosophy{background:var(--blue-light);border-radius:12px;padding:1.4rem;color:var(--navy);font-weight:500;border-left:4px solid var(--blue-mid);font-size:.97rem;line-height:1.8;margin-top:1.2rem;}
 
 /* MISSION / VISION */
 .mv{background:var(--navy);padding:5rem 0;}
@@ -366,6 +381,8 @@ footer{background:var(--dark);color:#fff;padding:4rem 0 2rem;}
   .svc-g{grid-template-columns:repeat(2,1fr);}
   .about-g{grid-template-columns:1fr;}
   .ab-img{order:-1;max-width:480px;margin:0 auto;}
+  .leadership-g{grid-template-columns:1fr;}
+  .lead-img{max-width:480px;margin:0 auto;}
   .mv-g{grid-template-columns:1fr;}
   .team-g{grid-template-columns:repeat(2,1fr);}
   .why-g{grid-template-columns:repeat(2,1fr);}
@@ -399,8 +416,7 @@ footer{background:var(--dark);color:#fff;padding:4rem 0 2rem;}
 <!-- LOADER -->
 <div id="loader">
   <div class="">
-    <img src="images/AJ_logos_logo.png" width="100" alt="AJ Logos">
-    <div class="ld-name">LOGOS</div>
+    <img src="images/ajlogo.png" width="100" alt="AJ Logos">
   </div>
   <div class="ld-tagline">Building Generations.....</div>
   <div class="ld-bar-wrap"><div class="ld-bar"></div></div>
@@ -420,6 +436,7 @@ footer{background:var(--dark);color:#fff;padding:4rem 0 2rem;}
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#leadership">Leadership</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#team">Team</a></li>
@@ -435,6 +452,7 @@ footer{background:var(--dark);color:#fff;padding:4rem 0 2rem;}
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#leadership">Leadership</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#team">Team</a></li>
@@ -661,6 +679,42 @@ footer{background:var(--dark);color:#fff;padding:4rem 0 2rem;}
           <div class="pc-name">South View Park</div>
           <div class="pc-desc">4-bedroom home in Southview — complete turnkey from foundations to finishes including brickwork, plastering, tiling, roofing &amp; paving. Client received a move-in ready home on time.</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEADERSHIP -->
+<section class="leadership" id="leadership">
+  <div class="w">
+    <span class="stag" style="display:block">Leadership</span>
+    <h2 class="sh">Meet Tapiwa Annah Guzha</h2>
+    <p class="ss">The visionary founder and Managing Director driving AJ Logos Investments</p>
+    <div class="leadership-g">
+      <div class="lead-img">
+        <img src="images/Our_Team/Annah_Tapiwa_Guzha.jpeg" alt="Tapiwa Annah Guzha - Managing Director, AJ Logos Investments">
+      </div>
+      <div class="lead-txt">
+        <h3>Managing Director &amp; Projects Engineer</h3>
+        <p>Tapiwa Annah Guzha is the Managing Director and Projects Engineer at Anajoe Logos Investments. A registered member of the Zimbabwe Institute of Engineers, she brings extensive experience and a multidisciplinary approach to her leadership role.</p>
+        
+        <div class="cred-section">
+          <h4>Education &amp; Qualifications</h4>
+          <ul class="cred-list">
+            <li><strong>Bachelor of Technology (Hons)</strong> in Construction Engineering — National University of Science and Technology (NUST)</li>
+            <li><strong>Higher National Diploma</strong> in Construction Engineering — Harare Polytechnic</li>
+            <li><strong>Post Graduate Diploma</strong> in Project Management — Project Management Zimbabwe (PMZ)</li>
+            <li><strong>National Certificate</strong> in Brick &amp; Block Laying</li>
+            <li><strong>Bricklaying Apprenticeship</strong> — foundational hands-on industry training</li>
+          </ul>
+        </div>
+        
+        <div class="cred-section">
+          <h4>Professional Credentials</h4>
+          <p><strong>Registered Member</strong> of the Zimbabwe Institute of Engineers — committed to upholding professional standards and engineering excellence.</p>
+        </div>
+
+        <p class="lead-philosophy"><strong>Vision &amp; Values:</strong> Tapiwa's entrepreneurial drive stems from a deep-seated desire to excel, lead, and contribute positively to her community. She is committed to delivering exceptional service and fostering lasting client relationships built on trust. Every AJ Logos project reflects her philosophy: quality foundations lead to generations of lasting value.</p>
       </div>
     </div>
   </div>
